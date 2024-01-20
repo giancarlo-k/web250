@@ -1,6 +1,6 @@
 /* COLORS 
 #edf2fb
-#d7e3fc
+#d7e3fc - bg
 #ccdbfd
 #5587fb
 #abc4ff
@@ -139,9 +139,102 @@ justify-content: space-around;
   padding: 1.2vh;
 }
 
-main p {
-  width: 80%;
-  padding-left: 22.5vh;
+main {
+  display: flex;
 
+  flex-direction: column;
+  align-items: center;
 }
 
+.mainRectangle {
+  border:1.25px solid gray;
+  border-radius: 0.8%;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  padding: 5vh;
+  align-items: center;
+  background-color: #ccdbfd;
+  height: 70vh;
+}
+
+.colorScheme, .fontContainer {
+  margin-top: 5vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.brandP {
+  font-size: 24px;
+}
+
+.colorsBox {
+  display: flex;
+  align-items: center;
+}
+
+.colorsBox > div {
+  width: 70px;
+  height: 70px;
+  margin: 15px;
+  border-radius: 100%;
+  border: 1px solid rgba(57, 57, 57, 0.142);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.colorsBox > div > p {
+  position: relative;
+  margin-top: 120px;
+  font-size: 14px;
+}
+
+.color1 {
+  background: #5587fb;
+}
+
+.color2 {
+  background: #abc4ff;
+}
+
+.color3 {
+  background: #ccdbfd;
+}
+
+.color4 {
+  background: #d7e3fc;
+}
+
+.color5 {
+  background: #edf2fb;
+}
+
+.colorsBox > div:hover {
+  border: 1px solid black;
+}
+
+.twoFontBoxes {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.font1Box, .font2Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vh;
+}
+
+.fontName {
+  font-size: 19px;
+}
+
+.font2Box {
+  font-family: 'Inter', sans-serif;
+}
